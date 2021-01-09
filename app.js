@@ -3,6 +3,11 @@
 //https://javascript.info/strict-mode  or 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
+
+//This program is written very naively - on purpose 
+//There will be future excercises to improve the program design and structure
+
+
 const prompt = require('prompt-sync')({sigint: true});
 
 //Apple Banana Cherry Diamond
