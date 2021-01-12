@@ -2,11 +2,8 @@
 
 //https://javascript.info/strict-mode  or 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
-
-
 //This program is written very naively - on purpose 
 //There will be future excercises to improve the program design and structure
-
 
 const prompt = require('prompt-sync')({sigint: true});
 
@@ -15,7 +12,10 @@ const reel1=['Apple','Banana','Cherry','Diamond','Cherry','Diamond','Apple','App
 const reel2=['Apple','Diamond','Cherry','Banana','Banana','Cherry','Apple','Banana','Apple','Cherry']
 const reel3=['Cherry','Banana','Cherry','Apple','Apple','Banana','Diamond','Apple','Cherry','Banana']
 
+
 let money = 100
+
+let started=process.hrtime() //returns a [seconds][nanoseonds] tuple
 
 while (money) {
 
@@ -53,4 +53,8 @@ while (money) {
         console.log('You lose :o(')
     }
 }   
+
 console.log ("You are out of money - gambling is fools game") 
+
+let took=process.hrtime(started)
+console.log (took[0] +" seconds and " + took[1] /1e6 + " milliseconds")
