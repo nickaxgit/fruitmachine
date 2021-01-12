@@ -54,7 +54,7 @@ while (money) {
     }
 }   
 
-console.log ("You are out of money - gambling is fools game") 
+console.log ("You are out of money - gambling is a fools game") 
 
 let took=process.hrtime(started)
 console.log (took[0] +" seconds and " + took[1] /1e6 + " milliseconds")
